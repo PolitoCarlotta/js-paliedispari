@@ -8,6 +8,7 @@ function reverse (word){
     for(let i=word.length -1; i>=0; i--){
         reversedWord += word[i]
     }
+    console.log(reversedWord)
     if(word === reversedWord){
         console.log(true)
     }
@@ -16,7 +17,7 @@ function reverse (word){
     }
 }
 
-let name= prompt('Inserisci una parola')
+let name= prompt('Inserisci una parola').toLowerCase()
 console.log(name)
 reverse(name)
 
