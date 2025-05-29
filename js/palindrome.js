@@ -1,23 +1,35 @@
 // inserire una parola
 // funzione per capire se palindroma
-
-
+    let name= prompt('Inserisci una parola').toLowerCase()
+    let result=false
+    let reversedWord=''
 
 function reverse (word){
-    let reversedWord=''
     for(let i=word.length -1; i>=0; i--){
         reversedWord += word[i]
     }
-    console.log(reversedWord)
-    if(word === reversedWord){
-        console.log(true)
+}
+
+reverse(name)
+
+function isPalindroma (word1,word2){
+    if(reversedWord=== name){
+        return result = true
     }
     else{
-        console.log(false)
+        return result
     }
 }
 
-let name= prompt('Inserisci una parola').toLowerCase()
-console.log(name)
-reverse(name)
+const declaration= isPalindroma(name,reversedWord)
+
+if(declaration === true){
+    console.log(`la parola ${name} è palindroma` )
+}
+else{
+    console.log(`la parola ${name} non è palindroma`)
+}
+console.log(name, reversedWord, result)
+
+
 
